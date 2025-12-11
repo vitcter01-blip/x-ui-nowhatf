@@ -1009,7 +1009,7 @@ echo "net.ipv4.tcp_wmem = 4096 65536 16777216" | tee -a /etc/sysctl.conf
 sysctl -p
 
 ######################install_fake_site#################################################################
-sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/S-UI-PRO/master/randomfakehtml.sh)"
+sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/mozaroc/x-ui-pro/refs/heads/master/randomfakehtml.sh)"
 
 ######################cronjob for ssl/reload service/cloudflareips######################################
 crontab -l | grep -v "certbot\|x-ui\|cloudflareips" | crontab -
